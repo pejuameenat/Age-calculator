@@ -1,0 +1,106 @@
+:root {
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Light-grey);
+}
+.hero{
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 4rem;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--White);
+    padding: 1rem;
+    border-bottom-right-radius: 80px;
+    position: relative;
+}
+
+label {
+    font-weight: 600;
+    color: var(--Smokey-grey);
+}
+
+.input-div {
+    padding: 2rem 0 3rem;
+}
+
+.input-div input {
+    width: 70px;
+    border-radius: 5px;
+    padding: .8rem;
+    background-color: transparent;
+    font-weight: 600;
+    text-align: center;
+    outline: 0;
+}
+ .input-div input:focus{
+    outline: 1px solid var(--Purple);
+ }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.input-validator{
+    display: block;
+    padding: .5rem 0;
+    font-weight: 600;
+    color: var(--Light-red);
+}
+
+img {
+    width: 55px;
+    padding: .8rem;
+    background-color: var(--Purple);
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.display-category {
+    padding: 2rem 0 1rem;
+}
+
+.display-category span, span {
+    color: var(--Purple)
+}
+
+.display-category h1 {
+    font-size: 3.5rem;
+}
+
+ @media only screen and (min-width: 800px){
+    .card{
+        width: 40%;
+    }
+    img{
+        position: absolute;
+        transform: translateX(380%);
+        top: 8rem;
+ }
+}
+ 
